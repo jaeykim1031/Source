@@ -5,35 +5,44 @@
     <title>표</title>
     <style>
         table{
-            width: 100%;
+            width: 60%;
             border-collapse: collapse;
+            margin: 0 auto; /* 중앙 정렬*/
+
         }
         td,th{
             border: 1px solid #000;
         }
+        .n1{
+            background-color: violet;
+        }
+        .c1{
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>   
     <table>
        <thead>
              <tr>            
-                <th>교과목</th>
-                <th>점수</th>          
+                <th >교과목</th>
+                <th  >점수</th>          
             </tr>
         </thead>
         <tbody>
             <tr>          
-                <th>HTML</th>
+                <th  >HTML</th>
                 <td>93</td>                
             </tr>
             <tr>          
-                <th>CSS</th>
+                <th  >CSS</th>
                 <td>92</td>         
             </tr>
         </tbody> 
         <tfoot>
             <tr>           
-                <th>평균</th>
+                <th class = "n1" >평균</th>
                 <td>92.5</td>          
             </tr>
         </tfoot>       
