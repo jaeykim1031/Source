@@ -4,8 +4,54 @@
 <meta charset="utf-8">
 <title>가상클래스</title> 
 <style type="text/css"> 
-	a { color: dodgerblue; }
-    a:hover { color: red; }
+	a { color: dodgerblue; 
+      text-decoration: underline;
+    
+  
+  }
+    a:hover { color: rgb(169, 233, 51); }  /* 마우스 올렸을 때*/
+    a:active { color: red;}                /* 마우스 클릭하고 있을 때*/
+    a:visited {color: cadetblue;}          /* 방문한   사이트  */
+    .d1{
+      background-color: rgb(211, 148, 66);
+      height: 50px;
+      width: 100px;
+      margin: 20px;
+      border-radius: 20px ;
+    }
+    .d1:hover{
+      background-color: blue;
+      height: 200px;
+      width: 333px;
+    }
+
+    .d2{
+      background-color: aqua;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      color: brown;
+      font-weight: bolder;
+      font-size: 20px;
+      margin: 10px;
+      float: left;
+
+      /* 글자 가운데 정렬 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .clear{
+        clear: both;
+      }
+      .d2:hover{
+        background-color: blue;
+      }
+
+      .container{
+        width: 70%;
+        margin: 0 auto;
+      }
 </style> 
 </head>
 <body>
@@ -16,5 +62,47 @@
      <li><a href="#">CUSTOMER</a></li>
      <li><a href="#">COMMUNITY</a></li>
    </ul>
+
+   <h2> 마우스 올렸을 때 반응</h2>  
+   <hr>
+   <div class="d1">  </div>
+   <div class="d1">  </div>
+   <div class="d1">  </div>   
+
+   <hr>
+   <h2> border-radius 활용하기 - 원 제작</h2> 
+   <hr>
+   
+   <div class="container">
+   <div class="d2" >
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+
+   <div class="clear">  </div>
+   
+   <div class="d2">
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+   <div class="d2">
+    글자 넣기 
+   </div>
+
+  </div>
+
 </body>
 </html>
