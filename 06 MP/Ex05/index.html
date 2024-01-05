@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Index Page </title>
+	<style>
+		#wrap {
+			border: 1px solid red;
+			width: 95%;
+			margin: 0 auto;
+			height: 1200px;
+		}
+
+		header,
+		footer {
+			border: 1px solid blue;
+			height: 100px;
+		}
+
+		header img {}
+
+		aside {
+			border: 1px solid green;
+			width: 20%;
+			height: 650px;
+			float: left;
+		}
+
+		.a1 {
+			background-color: lightgray;
+			border: 1px solid gray;
+			width: 85%;
+			height: 200px;
+			margin: 5px;
+			border-radius: 20px
+		}
+
+		.aa1 {
+			font-weight: bolder;
+			padding-top: 10px;
+			padding-left: 15px;
+		}
+
+		.aa2 {
+
+			padding-top: 10px;
+			padding-left: 15px;
+		}
+
+		.login-form input {
+			margin-bottom: 2px;
+			padding: 8px;
+			border: 1px solid #ccc;
+		}
+
+
+		main {
+			border: 1px solid magenta;
+			width: 80%;
+			height: 1100px;
+			background-color: aqua;
+			margin-left: 20%;
+		}
+
+		.box1 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+		}
+
+		.main_contents {
+			border: 1px solid black;
+			width: 48%;
+			height: 200px;
+
+		}
+
+
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div>
+				<img src="img/logo.png" style="width: 200px; height: 9%; padding: 5px; float: left;" alt="">
+			</div>
+
+			<div>
+				<div style="
+					border: 1px solid red; 
+					float: right; padding: 7px; width: 1000px; text-align: right;"> HOME | LOGIN | JOIN | NOTICE
+				</div>
+
+				<!-- <div class="clear"></div> -->
+				<div style="
+				color : white; 
+				width : 1400px ; 
+				height : 30px; 
+				border:1px solid red; 
+				background-image: url('img/main_menu_bg.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				left: 100px; 
+				top : 70px;
+				margin-left: 300px;
+				text-align: center;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자유 게시판 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				기타 연주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				공동 구매 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				연주회 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				회원 게시판 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				</div>
+			</div>
+		</header>
+
+
+		<aside>
+			<div class="a1">
+				<img src="img/ttl_login.png" style="width: 50%; padding-top: 20px; padding-left: 10px;" alt="">
+				<br>
+				<img src="img/btn_login.gif" style="float: right; padding-right: 15px; width: 30%;" alt="">
+				<form class="login-form" style="padding-left: 5px;">
+					<input type="text">
+					<input type="text">
+				</form>
+				<br>
+				<div style="padding-left: px">
+					<img src="img/btn_join.gif" style="width: 30%; float: left;" alt="">
+					<img src="img/btn_search.gif" style="width: 70%; float: left;" alt="">
+				</div>
+			</div>
+
+			<br>
+
+			<div class="a1">
+				<div class="aa1"> 방명록 </div>
+				<hr>
+				<div class="aa2"> <img src="img/icon_blue.gif" alt=""> 안녕하세요! </div>
+				<div class="aa2"> <img src="img/icon_blue.gif" alt=""> 안녕하세요! </div>
+				<div class="aa2"> <img src="img/icon_blue.gif" alt=""> 안녕하세요! </div>
+				<div class="aa2"> <img src="img/icon_blue.gif" alt=""> 안녕하세요! </div>
+			</div>
+		</aside>
+
+		<main>
+			<div class="box1">
+				<img src="img/main_img.png" alt="">
+
+			</div>
+
+			<div class="main_contents" style="float: right; height: 400px;">
+				
+				Youtube 동영상
+			</div>
+
+			<div class="main_contents"> 
+				<div>
+				<img src="img/latest1.gif"  style=" width: 18%;padding-top: 7px;" alt="">
+				<img src="img/more.gif" style="float: right; width: 6%; padding-top: 7px;" alt="">
+				<hr color="gray">
+				</div>
+
+				<div>
+				<img src="img/book_pen.gif" style="width: 25%;" alt="">
+				</div>
+
+				<div style="margin-left: auto;">
+					루바토 개편과 사이트 이용...
+				</div>
+
+			</div>
+			
+			<div class="main_contents"> 자유 게시판</div>
+
+			<div class="main_contents" style=" width: 100%;"> 포토 갤러리 </div>
+
+		</main>
+
+		<div class="clear"> </div>
+
+		<footer>
+			<img src="img/logo_footer.gif" style="align-items: center; float: left;" alt="">
+
+			<div style=" align-items: center;">
+				서울시 강남구 삼성동 1234 우 : 123-1234 <br>
+				TEL : 031-123-1234 Email : email@domain.com <br>
+				COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED
+			</div>
+
+		</footer>
+		</di>
+</body>
+
+</html>
