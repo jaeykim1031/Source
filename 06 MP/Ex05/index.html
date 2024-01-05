@@ -55,12 +55,20 @@
 			border: 1px solid #ccc;
 		}
 
+		.i2 {
+            padding-left: 74%;
+			padding-top: 10px;
+        }
+
+		.i3 {
+			margin-left: 60px;
+		}
+
 
 		main {
 			border: 1px solid magenta;
 			width: 80%;
-			height: 1100px;
-			background-color: aqua;
+
 			margin-left: 20%;
 		}
 
@@ -84,10 +92,79 @@
 
 		}
 
-
-
 		.clear {
 			clear: both;
+		}
+		.t1 {
+            /*
+            border: 1px solid darkgray;
+            */
+            background-color: white;
+        }
+
+		.d5 {
+			/* main 1 상단배너 */
+			/*
+            border: 1px solid black;
+            */
+		}
+
+		.d6 {
+			/* main 2 공지사항, 자유게시판 */
+			/*
+            border: 1px solid black;
+            */
+			width: 49%;
+			float: left;
+		}
+
+		.d7 {
+			/* main 3 유튜브동영상 */
+			/*
+            border: 1px solid black;
+            */
+			width: 49%;
+			float: right;
+			padding: 9px;
+		}
+
+		.d8 {
+			/* main 4 포토갤러리 */
+			/*
+            border: 1px solid black;
+            */
+			width: 98%;
+			float: left;
+		}
+
+		.d9 {
+			border: 1px solid gray;
+			margin-top: 10px;
+			width: 99%;
+			height: 200px;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.d10 {
+			margin-left: 10px;
+			margin-top: 5px;
+			width: 25%;
+			float: left;
+		}
+
+		header tr td {
+			/*
+            border: 1px solid blue;
+            */
+		}
+
+		aside tr td {
+			/*
+            border: 1px solid blue;
+            */
 		}
 	</style>
 </head>
@@ -119,16 +196,17 @@
 				top : 70px;
 				margin-left: 300px;
 				text-align: center;">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자유 게시판 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				기타 연주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				공동 구매 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				연주회 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				회원 게시판 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자유 게시판
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					기타 연주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					공동 구매 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					연주회 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					회원 게시판 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 				</div>
 			</div>
 		</header>
@@ -163,52 +241,102 @@
 		</aside>
 
 		<main>
-			<div class="box1">
-				<img src="img/main_img.png" alt="">
-
+			<div class="d5"> <!-- main 1 상단배너 -->
+				<br>
+				<img class="i1" width="95%" src="img/main_img.png">
+				<br>
 			</div>
-
-			<div class="main_contents" style="float: right; height: 400px;">
-				
-				Youtube 동영상
+			<div class="d6"> <!-- main 2 공지사항 -->
+				<table width="100%">
+					<tr>
+						<td colspan="3">
+							<img height="20px" src="img/latest1.gif"><img width="5%" class="i2"  src="img/more.gif">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td width="28%"><img width="70%" src="img/book_pen.gif"></td>
+						<td width="50%">루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... </td>
+						<td>2014-01-05<br>
+							2014-01-05<br>
+							2014-01-05<br>
+							2014-01-05
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<img height="20px" src="img/latest2.gif"><img width="5%" class="i2" src="img/more.gif">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/book_pen.gif"></td>
+						<td width="50%">루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... <br>
+							루바토 개편과 사이트 이용... </td>
+						<td>2014-01-05<br>
+							2014-01-05<br>
+							2014-01-05<br>
+							2014-01-05
+						</td>
+				</table>
 			</div>
-
-			<div class="main_contents"> 
-				<div>
-				<img src="img/latest1.gif"  style=" width: 18%;padding-top: 7px;" alt="">
-				<img src="img/more.gif" style="float: right; width: 6%; padding-top: 7px;" alt="">
-				<hr color="gray">
-				</div>
-
-				<div>
-				<img src="img/book_pen.gif" style="width: 25%;" alt="">
-				</div>
-
-				<div style="margin-left: auto;">
-					루바토 개편과 사이트 이용...
-				</div>
-
+			<div class="d7"> <!-- main 3 유튜브동영상 -->
+				<img height="20px" src="img/latest3.gif"><img width="5%" class="i2" src="img/more.gif">
+				<hr>
+				<img width="65%" class="i3" src="img/bach.jpg">
 			</div>
-			
-			<div class="main_contents"> 자유 게시판</div>
-
-			<div class="main_contents" style=" width: 100%;"> 포토 갤러리 </div>
-
+			<div class="d8"> <!-- main 4 포토갤러리 -->
+				<img height="20px" src="img/latest4.gif"><br>
+				<div class="d9">
+					<div class="d10">
+						<img src="img/img1.jpg"><br>
+						기타 페스티벌 4중주
+					</div>
+					<div class="d10">
+						<img src="img/img1.jpg"><br>
+						기타 페스티벌 4중주
+					</div>
+					<div class="d10">
+						<img src="img/img1.jpg"><br>
+						기타 페스티벌 4중주
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
 		</main>
 
 		<div class="clear"> </div>
 
 		<footer>
-			<img src="img/logo_footer.gif" style="align-items: center; float: left;" alt="">
+			<table class="t1">
+				<tr>
+					<td width="20%"></td>
+					<td width="20%"><img src="img/footer_logo.gif"></td>
+					<td width="35%">서울시 강남구 삼성동 1234 우: 123-1234<br>
+						TEL : 031-123-1234 Email : email@domain.com<br>
+						COPYRIGHT(C) 루바토 ALL RIGHTS RESERVED</td>
+					<td width="17%"></td>
+					<td width="8%"><img src="img/facebook.gif">
+						<img src="img/blog.gif">
+						<img src="img/twitter.gif">
+					</td>
+				</tr>
+			</table>
 
-			<div style=" align-items: center;">
-				서울시 강남구 삼성동 1234 우 : 123-1234 <br>
-				TEL : 031-123-1234 Email : email@domain.com <br>
-				COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED
-			</div>
-
-		</footer>
-		</di>
+			</di>
 </body>
 
 </html>
