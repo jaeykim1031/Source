@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> z - index </title>
+</head>
+	<style>
+		.c1{
+			width: 500px;
+			border: 1px solid red;
+			margin: 0 auto;	
+		}
+		.c1  > div {
+			 /* border: 1px solid blue; */
+			 background-color: yellowgreen;
+			 width: 100px;
+			 height: 100px;
+			 margin: 10px;
+
+			 display: flex;
+			 /* 수평 정렬*/
+			 justify-content:center;
+			 
+			 /* 수직 정렬 */
+			 align-items:center;
+		}
+		.d1{
+			z-index: 700;
+			position: relative;	
+			left: 0;
+			top: 0;
+			opacity: 0.9;
+		}
+
+		.d2{
+			z-index: 600;
+			position: relative;	
+			left: 10px;
+			top: -100px;
+
+		}
+		.d3{
+			z-index: 500;
+			position: relative;	
+			left: 20px;
+			top: -200px;
+
+		}
+		.d4{
+			z-index: 400;
+			position: relative;	
+			left: 30px;
+			top: -300px;
+
+		}
+		.d5{
+			z-index: 300;
+			position: relative;	
+			left: 40px;
+			top: -400px;
+
+		}
+		.d6{
+			z-index: 200;
+			position: relative;	
+			left: 50px;
+			top: -500px;
+		}
+		
+	</style>
+
+
+<body>
+		<h2> z-index : 박스의 우선순위를 지정하는 값 </h2>
+		<hr>
+		<div class="c1">
+			<div class="d1" style="background-color: olivedrab;">1</div>
+			<div class="d2" style="background-color: lightgrey;">1</div>
+			<div class="d3" style="background-color: aquamarine;">2</div>
+			<div class="d4" style="background-color: lightsalmon;" >3</div>
+			<div class="d5" style="background-color: mintcream;">4</div>
+			<div class="d6" style="background-color: violet;">5</div>
+		</div>
+</body>
+</html>

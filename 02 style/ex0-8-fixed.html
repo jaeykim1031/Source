@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Position : relative, absolute, fixed </title>
+
+	<style>
+		.grand-parent{
+			border: 5px dotted lightsalmon;
+			height: 500px;
+			padding: 50px;
+			
+		}
+			.parent{
+				border: 5px dotted blueviolet;
+				height: 500px;
+				padding: 10px;
+				
+				position: relative;
+				left: 100px;
+				top : 100px;
+			}
+				.child{
+					border: 3px dotted yellowgreen;
+					border-radius: 12px;
+					background-color: aquamarine;	
+					width: 150px;	
+					height: 100px;
+
+					display : flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+		.fixed{
+			/* 	body를 기준점으로 
+				기준점이 자신의 원본의 위치 */
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="grand-parent">
+		<div class="parent">
+			<div class = "child"> 1 </div>
+			<div class = "child fixed" > 2 </div>
+			<div class = "child" > 2 </div>
+			<div class = "child"> 3 </div>
+		</div>
+	</div>
+
+</body>
+</html>
+
