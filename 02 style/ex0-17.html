@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 점핑 볼 </title>
+	<style>
+		@keyframes bounce {
+			from, to{
+				bottom: 0px;
+				animation-timing-function: ease-out;
+			}
+
+			50%{
+				bottom: 500px;
+				animation-timing-function: ease-in;
+			}
+
+		}
+
+		div{
+			position: absolute;
+		border: 1px solid rebeccapurple;
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+
+			animation: bounce;
+			animation-iteration-count: infinite;
+		}
+
+		#b1{ left: 10px; background-color: red; animation-duration: 5s;}
+		#b2{ left: 50px; background-color: greenyellow; animation-duration: 10s;}
+		#b3{ left: 90px; background-color: rgb(80, 241, 153); animation-duration: 3s;}
+		#b4{ left: 130px; background-color: rgb(66, 193, 224); animation-duration: 8s;}
+		#b5{ left: 170px; background-color: rgb(187, 92, 241, 1); animation-duration: 1s;}
+		#b6{ left: 210px; background-color: rgb(252, 53, 225); animation-duration: 6s;}
+
+	</style>
+</head>
+<body>
+		<div id="b1"> </div>
+		<div id="b2"> </div>
+		<div id="b3"> </div>
+		<div id="b4"> </div>
+		<div id="b5"> </div>
+		<div id="b6"> </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Transition의 변화 속성 </title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+			border: 1px solid red;
+
+			transition: width 2s, height 2s, background-color 2s ,border 1s, transform 2s;
+		}
+
+		div:hover{
+			height: 600px;
+			width: 600px;
+			border: 3px solid blue;
+			background-color: green;
+
+			transform: rotate(2700deg);
+		}
+
+	</style>
+
+</head>
+<body>
+	<div> 마우스 올리기 </div>
+
+
+
+</body>
+</html>
