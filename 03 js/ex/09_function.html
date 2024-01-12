@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		f1();
+
+		function f1 (){
+			document.write("<p> 기본 함수 선언 <p>");
+		}
+
+		f1();
+
+		// 무명 함수 : 함수 선언 이후에 호출되어야 함
+			// var, let, const 
+		const f2 = function ( ){
+			document.write("<p> =========== <p>");
+			document.write("==== 무명 함수 ======");
+
+		}
+
+		f2();
+
+		// Arrow 함수 
+		const f3 = () => {
+			document.write (" Arrow 함수 <p>");
+		}
+
+		f3();
+	</script>
+	
+</body>
+</html>

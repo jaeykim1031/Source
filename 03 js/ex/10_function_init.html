@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 자동 실행 함수 </title>
+</head>
+<body>
+	<h2> 자동 실행 함수</h2>	
+	<hr>	
+	
+	<script>
+		
+		// 호출 없이 자동 작동 : 페이지 로딩 시 자동 실행 
+		(
+			function () {
+				document.write (" 자동 실행 <p>")
+			}
+		) ();
+
+		const F1 = (
+			function() {
+				document.write (" 자동 실행 2 <p>")
+			}
+		) ();
+
+		// Arrow 함수 
+		const F2 = ( () => {
+				document.write(" arrow 자동 함수 <p>")
+		} ) ();
+
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			background-color: aquamarine;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: blueviolet;
+		}
+		.c1{
+			background-color: bisque;
+		}
+		#i1{
+			background-color: red;
+		}
+		.c3{
+			background-color: black !important;
+		}
+
+	</style>
+
+</head>
+<body>
+	<h2>- 선택자에 따라서 충돌 발생시 우선순위 <br>
+		- * &lt; 태그 &lt; class &lt; id &lt; 인라인(태그 내부) &lt; !important</h2>
+		<hr>
+
+	<div> 박스 1 </div>
+	<div class="c1"> 박스 2 </div>
+	<div id="i1"> 박스 3 </div>
+	<div class="c1" id="i1"> 박스 4 </div>
+	<div class="c1" id="i1" style="background-color: yellow;"> 박스 5 </div>
+	<div class="c1 c3" id="i1" style="background-color: yellow;"  > 박스 6 </div>
+	
+</body>
+</html>

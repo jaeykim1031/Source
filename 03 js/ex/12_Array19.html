@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script>
+		var kdata = ['서울', '부산', '청주', '대구'];
+		function printArr(item, index) {
+			document.write("배열 데이터 [" + index + "] : " + item + "<br>");
+		}
+		kdata.forEach(printArr);
+
+		var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+		var sum = 0;
+		function addArr(value) {
+			sum += value;
+		}
+		data.forEach(addArr);
+		document.write("배열 데이터 합 :" + sum + "<p/>");
+		
+		// 애로우 함수 
+		kdata.forEach((item, index) => {
+			document.write("배열 데이터 [" + index + "] : " + item + "<br>");
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

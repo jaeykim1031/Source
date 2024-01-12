@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		td table tr {
+			border: 2px solid black;
+			padding: 10px;
+		}
+	
+	
+	</style>
+	
+	<script>
+		var d2data=[[10, 20, 30, 40, 0], [60, 70, 80, 90, 0]];
+
+		d2data[0][4]=50; 
+		d2data[1][4]=100; 
+
+		document.write("2차원 배열 첫 번째 데이터 : " + d2data[0][0] + "<br>");
+		document.write("2차원 배열 마지막 데이터 : " + d2data[1][4] + "<br>");
+		document.write("2차원 배열 행 길이 : " + d2data.length + "<br>");
+		document.write("2차원 배열 열 길이 : " + d2data[0].length + "<br>");
+
+		document.write("=============================== <p>");
+		
+		function arr2 (){
+			let tab;
+
+			tab += "<table align = 'center' style = 'border: 2px solid black; padding: 10px; '>";
+			for  ( let i = 0 ; i < d2data.length ; i++){
+				tab += "<tr>";
+
+				for (let j = 0 ; j < d2data[i].length ; j++ ){
+					tab += "<td>" + d2data[i][j] + "</td>"
+
+				}
+				tab += "</tr>"
+			}
+
+			tab += "</table>";
+
+			document.write(tab);
+		}
+
+
+		</script>
+
+
+
+</head>
+
+<body>
+	<button type="button" onclick="printAll()">전체 배열 데이터 보기</button></p>
+	<button type="button" onclick="printPart()">홀수 배열 데이터 보기</button>
+
+	<button onclick="arr2()" > 출력  </button> 
+
+
+
+</body>
+
+</html>
